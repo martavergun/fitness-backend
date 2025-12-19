@@ -11,3 +11,18 @@ Backend for fitness web application (course project).
 ```bash
 npm install
 npm run dev
+
+## Authentication
+
+Backend uses Firebase Authentication.
+
+### Supported methods
+- Email / Password
+- Google Sign-In
+
+### Authorization
+All protected endpoints require header:
+
+Authorization: Bearer <Firebase ID Token>
+
+The token is verified using Firebase Admin SDK.
